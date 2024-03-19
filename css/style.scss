@@ -1,8 +1,20 @@
-@import url(../fonts/Jost-Regular.ttf);
-@import url(../fonts/Jost-Medium.ttf);
-@import url(../fonts/Jost-SemiBold.ttf);
-@import url(../fonts/Jost-Bold.ttf);
-@import url(../fonts/Jost-Black.ttf);
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost-Black.ttf);
+  font-weight: 900;
+}
 
 *,
 *::before,
@@ -235,6 +247,7 @@ img {
   display: flex;
   background-color: #14141d;
   border-radius: 10px;
+  margin-bottom: 80px;
 
   .info__item {
     margin: 30px;
@@ -274,5 +287,75 @@ img {
         background: rgba(0, 0, 0, 0.5);
       }
     }
+  }
+}
+
+.block__title {
+  margin: 0 0 40px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  &__block {
+    width: 33.33%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: block;
+    padding: 20px;
+    background-color: #14141d;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #22222f;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    max-height: 200px;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 40px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 18px;
+    display: flex;
+
+    del {
+      margin-left: 30px;
+      color: #818181;
+    }
+  }
+
+  &__favorite {
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
   }
 }

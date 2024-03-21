@@ -540,10 +540,11 @@ img {
       font-weight: 600;
       text-transform: uppercase;
       cursor: pointer;
-      transition: color 0.2s ease;
+      transition: color 0.2s ease, border-color 0.2s ease;
 
       &:hover {
         color: #c7a17a;
+        border-color: #c7a17a;
       }
     }
   }

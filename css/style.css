@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Jost";
   src: url(../fonts/Jost-Regular.ttf);
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Jost";
@@ -23,6 +23,7 @@ body {
   margin: 0;
   background-color: #020204;
   font-family: "Jost", sans-serif;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -46,6 +47,9 @@ img {
   letter-spacing: 0.1em;
   border-radius: 10px;
   transition: background-color 0.2s ease;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
 }
 .btn-main {
   background-color: #c7a17a;
@@ -58,6 +62,9 @@ img {
 }
 .btn-secondary:hover {
   background-color: #666681;
+}
+.btn-full {
+  width: 100%;
 }
 
 .container {
@@ -375,6 +382,95 @@ img {
 .footer__block {
   width: 33.33%;
   padding: 0 10px;
+}
+
+.product {
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+.product .block__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.product__wrapper {
+  margin: 0 -10px 80px;
+  display: flex;
+}
+.product__img {
+  flex: 1;
+  padding: 0 10px;
+}
+.product__img .product__item {
+  padding: 60px;
+}
+.product__info {
+  width: 420px;
+  padding: 0 10px;
+}
+.product__item {
+  padding: 30px;
+  background-color: #14141d;
+  border-radius: 10px;
+}
+.product__item ul {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #dfdfdf;
+}
+.product__picture {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.product__price {
+  margin-bottom: 30px;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+}
+.product__price del {
+  margin-left: 30px;
+  font-weight: 400;
+  color: #818181;
+}
+.product .radio {
+  margin-right: 10px;
+  position: relative;
+}
+.product .radio__wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+.product .radio__input {
+  opacity: 0;
+  position: absolute;
+}
+.product .radio__input:checked + .radio__label {
+  color: #c7a17a;
+  border-color: #c7a17a;
+}
+.product .radio__label {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.product .radio__label:hover {
+  color: #c7a17a;
+}
+.product__description .block__title {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
